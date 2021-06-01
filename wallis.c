@@ -24,3 +24,11 @@ int main(void) {
   }
 }
 
+
+float wallis_pi(int iters) {
+    float ret = 1;
+    for (int i=1; i<=iters; i++) {
+        ret *= 4.0*i*i/(4.0*i*i - 1);
+    }
+    return ret*2;
+}
